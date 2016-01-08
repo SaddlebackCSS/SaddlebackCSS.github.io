@@ -280,7 +280,7 @@ characters and escape both `'` and `"` inside of them.
 {% highlight python %}
 print('''This is a multiline string.
 
-It can have ' and " with out escaping, but can't have three ''s or "'s in a row.
+It can have ' and " without escaping, but can't have three ''s or "'s in a row.
 ''')
 {% endhighlight %}
 
@@ -590,7 +590,7 @@ print(
     "the third")
 
 d = (
-        (x2 - x1) ** 2
+          (x2 - x1) ** 2
         + (y2 - y1) ** 2
     ) ** 0.5
 {% endhighlight %}
@@ -767,7 +767,7 @@ packages in other venvs.
 {% highlight sh %}
 $ pip install markdown
 $ echo '**hello world**' | python -m markdown
-<p><strong>hello</strong></p>
+<p><strong>hello world</strong></p>
 {% endhighlight %}
 
 Some packages are not available via `pip`. You must download and extract the
