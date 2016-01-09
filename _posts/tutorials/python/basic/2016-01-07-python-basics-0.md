@@ -19,7 +19,7 @@ I will be using the following conventions in this series.
 
 Lines that start with `>>> ` are to be typed into the Python interactive shell.
 
-{% highlight python %}
+{% highlight pycon %}
 >>> print('hello, world!')
 hello, world!
 {% endhighlight %}
@@ -85,7 +85,7 @@ $ python3
 This will run the interpreter in interactive mode, allowing you to enter Python
 expressions, which will be evaluated immediately and the results printed.
 
-{% highlight python %}
+{% highlight pycon %}
 >>> print('hello')
 hello
 {% endhighlight %}
@@ -157,7 +157,7 @@ A name can only be bound to one object, but identical names can appear in
 different *scopes*.
 Every object, function, and module has its own scope.
 
-{% highlight python %}
+{% highlight pycon %}
 >>> x = 5 # bind the name x to an int object
 >>> x = 6 # bind the name x to a different int object; the old object is deleted
 >>> y = x # y and x refer to the same location in memory
@@ -174,7 +174,7 @@ use the term *attribute* to refer to any item in an object's namespace.
 An object's attributes can be accessed using the `.` (attribute access)
 operator.
 
-{% highlight python %}
+{% highlight pycon %}
 >>> x.real
 6
 >>> x.bit_length()
@@ -189,7 +189,7 @@ Whenever a name is bound to a new/different object, or goes out of scope, the
 An object's reference count can also be decreased using the `del` keyword.
 When an object's reference count reaches zero, it is deleted.
 
-{% highlight python %}
+{% highlight pycon %}
 >>> del x # decrements the object's reference count.
           # the object is not actually deleted, because y is still bound to it.
 {% endhighlight %}
@@ -212,7 +212,7 @@ them.
 These are easier to read, and allow the interpreter to provide default behavior
 for objects that do not define these attributes.
 
-{% highlight python %}
+{% highlight pycon %}
 >>> y.__str__() # y might be bound to an object which does not define __str__
 '6'
 >>> str(y)      # Python can supply a default implementation
@@ -290,7 +290,7 @@ You can also have a raw multiline string by prefixing it with `r`.
 
 Strings can be concatenated using `+`.
 
-{% highlight python %}
+{% highlight pycon %}
 >>> s1 = 'hello'
 >>> s2 = 'world'
 >>> s3 = s1 + ' ' + s2
@@ -302,14 +302,14 @@ Strings can only be concatenated with other strings.
 To concatenate other values, pass them to the `str` function
 (it's better to use formatting, below).
 
-{% highlight python %}
+{% highlight pycon %}
 >>> s1 + ' ' + str(47)
 'hello 47'
 {% endhighlight %}
 
 Strings can be repeated using `*`. The other operand must be an `int`.
 
-{% highlight python %}
+{% highlight pycon %}
 >>> s1 * 3
 'hellohellohello'
 >>> 3 * s1
@@ -318,7 +318,7 @@ Strings can be repeated using `*`. The other operand must be an `int`.
 
 You can get the length of a `str` using `len`.
 
-{% highlight python %}
+{% highlight pycon %}
 >>> print(s3, "is", len(s3), "letters long")
 hello world is 11 letters long
 {% endhighlight %}
@@ -382,7 +382,7 @@ and [Format examples](https://docs.python.org/3/library/string.html#format-examp
 
 To get an individual character, use the subscript operator.
 
-{% highlight python %}
+{% highlight pycon %}
 >>> s = "Hello"
 >>> s[2]
 'l'
@@ -391,7 +391,7 @@ To get an individual character, use the subscript operator.
 Python's subscript operator can also use ranges (called slices).
 The range consists of the first index, up to and *not* including the last index.
 
-{% highlight python %}
+{% highlight pycon %}
 >>> s[2:4]
 'll'
 >>> s[2:5]
@@ -401,7 +401,7 @@ The range consists of the first index, up to and *not* including the last index.
 Omitting the first index defaults to 0, omitting the last index defaults to
 the end of the string.
 
-{% highlight python %}
+{% highlight pycon %}
 >>> s[:2]
 'He'
 >>> s[2:]
@@ -410,7 +410,7 @@ the end of the string.
 
 Negative indices count from the end.
 
-{% highlight python %}
+{% highlight pycon %}
 >>> s[-1]
 'o'
 >>> s[-4:]
@@ -419,7 +419,7 @@ Negative indices count from the end.
 
 You can get the index of a substring using `find`.
 
-{% highlight python %}
+{% highlight pycon %}
 >>> s.find('e')
 1
 >>> s.find('lo')
@@ -430,7 +430,7 @@ You can get the index of a substring using `find`.
 
 You can get the *last* index of a substring using `rfind`.
 
-{% highlight python %}
+{% highlight pycon %}
 >>> s.find('l')
 2
 >>> s.rfind('l')
@@ -439,7 +439,7 @@ You can get the *last* index of a substring using `rfind`.
 
 You can replace all occurrences of a substring with another using `replace`.
 
-{% highlight python %}
+{% highlight pycon %}
 >>> '1,2,3'.replace(',', '|')
 '1|2|3'
 >>> '1,2,3'.replace(',', 'abacadabra')
@@ -449,14 +449,14 @@ You can replace all occurrences of a substring with another using `replace`.
 You can divide a string based on a delimiter using `split`.
 The result is a `list` of strings.
 
-{% highlight python %}
+{% highlight pycon %}
 >>> '1,2,3'.split(',')
 ['1', '2', '3']
 {% endhighlight %}
 
 Without a parameter, `split` splits on whitespace.
 
-{% highlight python %}
+{% highlight pycon %}
 >>> '1     2\t3'.split()
 ['1', '2', '3']
 {% endhighlight %}
@@ -464,14 +464,14 @@ Without a parameter, `split` splits on whitespace.
 If you have a multiline string, you can get a list of the individual lines
 using `splitlines`.
 
-{% highlight python %}
+{% highlight pycon %}
 >>> 'ab c\n\nde fg\rkl\r\n'.splitlines()
 ['ab c', '', 'de fg', 'kl']
 {% endhighlight %}
 
 You can combine the elements of a sequence on a delimiter using `join`.
 
-{% highlight python %}
+{% highlight pycon %}
 >>> ', '.join([1, 2, 3])
 '1, 2, 3'
 {% endhighlight %}
@@ -680,7 +680,7 @@ Packages and modules can be loaded using the `import` statement.
 The Python interpreter has a search path where it searches for packages and
 modules. The search path can be accessed using `sys.path`:
 
-{% highlight python %}
+{% highlight pycon %}
 >>> import sys
 >>> sys.path
 ['', '/home/sean/SaddlebackCSS/SaddlebackCSS.github.io', '/usr/lib/python3.4', '/usr/lib/python3.4/plat-x86_64-linux-gnu', '/usr/lib/python3.4/lib-dynload', '/usr/local/lib/python3.4/dist-packages', '/usr/lib/python3/dist-packages']
@@ -693,7 +693,7 @@ The `import` statement has an alternate form: `from`.
 The difference is that `import` will create a namespace for the imported module
 while `from` will bring names in the module into the current namespace.
 
-{% highlight python %}
+{% highlight pycon %}
 >>> import math
 >>> math.sin(math.radians(45)) # sine of 45 degrees (sin expects radians)
 0.7071067811865475
@@ -705,7 +705,7 @@ while `from` will bring names in the module into the current namespace.
 Both `import` and `from` can use the `as` keyword to assign an alias to the
 imported module.
 
-{% highlight python %}
+{% highlight pycon %}
 >>> import math as m
 >>> m.sin(m.radians(45))
 0.7071067811865475
