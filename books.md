@@ -7,6 +7,7 @@ group: navigation
 {% include JB/setup %}
 
 This page contains categorized links to recommended books.
+See also this [list of free programming books](http://www.e-booksdirectory.com/programming.php).
 
 ## Essentials
 
