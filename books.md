@@ -33,6 +33,10 @@ Books that every programmer must have.
   Goes into greater depth on selected patterns.
   Some consider it better for learning and understanding patterns than the GoF
   book, which is more of a reference book than a study book.
+- [97 Things Every Programmer Should Know](http://shop.oreilly.com/product/9780596809492.do):
+  The title says it all.
+  The actual "things" are listed
+  [here](http://programmer.97things.oreilly.com/wiki/index.php/Contributions_Appearing_in_the_Book).
 
 
 ## Intro to Programming
