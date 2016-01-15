@@ -14,7 +14,6 @@ tags: []
 When the first statement in a function (or class or module) is a string literal,
 it is referred to as a `docstring` and stored in the attribute `__doc__`.
 
-```
 {% highlight pycon %}
 >>> def foo():
 ...     'this is the docstring'
@@ -22,7 +21,6 @@ it is referred to as a `docstring` and stored in the attribute `__doc__`.
 >>> foo.__doc__
 'this is the docstring'
 {% endhighlight %}
-```
 
 When running the interpreter in interactive mode, the
 [help](https://docs.python.org/3/library/functions.html#help) function will
@@ -40,7 +38,6 @@ A more structured format is presented in
 A list of alternative formats is on
 [StackOverflow](http://stackoverflow.com/a/24385103).
 
-```
 {% highlight pycon %}
 >>> def hypotenuse(x, y):
 ...     """Computes the distance from the origin to the point (x, y)
@@ -54,7 +51,6 @@ A list of alternative formats is on
 >>> hypotenuse(3, 4)
 5.0
 {% endhighlight %}
-```
 
 ## The pydoc Module
 
@@ -78,7 +74,6 @@ When run, the below script will execute the tests in the docstring for
 The final three lines can be placed at the end of any Python source file to
 run its doctests.
 
-```
 {% highlight python %}
 def hypotenuse(x, y):
     """Computes the distance from the origin to the point (x, y)
@@ -98,7 +93,6 @@ if __name__ == "__main__":
     import doctest
     doctest.testmod(verbose=True)
 {% endhighlight %}
-```
 
 You can also maintain a file containing many tests and use `doctest` to check
 them.
@@ -125,12 +119,10 @@ The values of the annotations are stored in the function's `__annotations__`
 attribute, which is a `dict` whose keys are the names of the parameters or
 "return" for the return annotation.
 
-```
 {% highlight python %}
 def hypotenuse(x: float, y: float) -> float:
     return (x**2 + y**2) ** 0.5
 {% endhighlight %}
-```
 
 The [typing](https://docs.python.org/3/library/typing.html) module (in Python
 3.5 and later) contains definitions for abstract type hints, which may be
