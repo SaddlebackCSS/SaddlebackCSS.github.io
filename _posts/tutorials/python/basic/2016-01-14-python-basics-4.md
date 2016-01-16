@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Python Basics 4: Docstrings, pydoc, and doctest"
+title: "Python Basics 4: Docstrings, pydoc, doctest, and Function Annotations"
 author:
     name: Sean Raven
     github: dragon0
