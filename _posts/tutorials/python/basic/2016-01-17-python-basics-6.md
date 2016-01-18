@@ -59,7 +59,7 @@ def factorial(n):
     :raises ValueError: if n is negative
     """
     if not isinstance(n, int):
-        raise TypeError("n must be int, got {}".format(n.__class__.__name__))
+        raise TypeError("n must be int, got {}".format(n.__class__.__qualname__))
     if n < 0:
         raise ValueError("n must not be negative")
     if n == 0:
