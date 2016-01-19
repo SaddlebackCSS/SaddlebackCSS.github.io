@@ -25,7 +25,6 @@ body.
 The class body is executed in its own namespace.
 Any names defined in this namespace become attributes of the class.
 
-```
 {% highlight pycon %}
 >>> class Point:
 ...     x = y = 0
@@ -39,11 +38,9 @@ Traceback (most recent call last):
   File "<stdin>", line 1, in <module>
 AttributeError: type object 'Point' has no attribute 'z'
 {% endhighlight %}
-```
 
 Instances are created by calling the class as though it were a function.
 
-```
 {% highlight pycon %}
 >>> p = Point()
 >>> p.x = 5
@@ -56,7 +53,6 @@ Instances are created by calling the class as though it were a function.
 >>> Point.y
 0
 {% endhighlight %}
-```
 
 When attempting to access a particular attribute of an object, the object's
 namespace is searched for that attribute.
@@ -75,7 +71,6 @@ This can be done explicitly (by accessing the function through the class)
 or implicitly (by accessing the function through the instance).
 By convention, the first parameter of a method is called `self`.
 
-```
 {% highlight pycon %}
 >>> class Point:
 ...     x = y = 0
@@ -92,12 +87,10 @@ By convention, the first parameter of a method is called `self`.
 >>> p.magnitude()
 8.602325267042627
 {% endhighlight %}
-```
 
 The special method `__init__` is used to initialize the new instance.
 The arguments to the class are passed to `__init__`.
 
-```
 {% highlight pycon %}
 >>> class Point:
 ...     def __init__(self, x=0, y=0):
@@ -110,7 +103,6 @@ The arguments to the class are passed to `__init__`.
 >>> p.y
 5
 {% endhighlight %}
-```
 
 You may notice that I used two different techniques to initialize `x` and `y`.
 The first example assigned `x` and `y` in the class body.
@@ -159,7 +151,6 @@ Using the same name in the subclass's `__slots__` and the base class's
 `__slots__` can break the program.
 See [slots](https://docs.python.org/3/reference/datamodel.html#slots).
 
-```
 {% highlight python %}
 class Point:
     __slots__ = ['x', 'y']
@@ -168,7 +159,6 @@ class Point:
         self.y = y
 
 {% endhighlight %}
-```
 
 Most object-oriented languages support a notion of `public` and `private`
 members.
@@ -195,7 +185,6 @@ See [guide to using super()](https://rhettinger.wordpress.com/2011/05/26/super-c
 Note that you **must** explicitly call `super().__init__()` in your `__init__`
 method; this is not done automatically.
 
-```
 {% highlight pycon %}
 >>> class Point3D(Point):
 ...     __slots__ = ['z']
@@ -211,18 +200,15 @@ method; this is not done automatically.
 >>> p2.z
 5
 {% endhighlight %}
-```
 
 Python supports multiple inheritance, where a class can have multiple base classes.
 This is commonly used to support [mix-in classes](https://en.wikipedia.org/wiki/Mixin).
 
-```
 {% highlight python %}
 class A: pass
 class B: pass
 class C(A, B): pass
 {% endhighlight %}
-```
 
 ## Overloading Operators
 
@@ -231,7 +217,6 @@ Most operators in Python are implemented by methods with
 The most obvious when running Python in interactive mode is converting an object
 to its string representation. This is done using `__repr__`.
 
-```
 {% highlight pycon %}
 >>> class Point:
 ...     def __init__(self, x=0, y=0):
@@ -246,7 +231,6 @@ Point(0, 0)
 >>> p
 Point(3, 5)
 {% endhighlight %}
-```
 
 (There is also a `__str__` method. Its default is to call `__repr__`.
 The difference is that the result of `__repr__` should look like a call to the
@@ -312,7 +296,6 @@ The call operator is defined by `__call__`.
 Arguments to the call are arguments to `__call__`.
 See [the documentation](https://docs.python.org/3/reference/datamodel.html#object.__call__).
 
-```
 {% highlight pycon %}
 >>> class Multiplier:
 ...     def __init__(self, x):
@@ -328,7 +311,6 @@ See [the documentation](https://docs.python.org/3/reference/datamodel.html#objec
 >>> m5(65536)
 327680
 {% endhighlight %}
-```
 
 ## Decorators
 
@@ -337,7 +319,6 @@ parameter and returns a callable.
 Python has special syntax for decorators so that they can be applied when the
 callable is defined.
 
-```
 {% highlight python %}
 @decorator
 def foo():
@@ -348,7 +329,6 @@ def foo():
     pass
 foo = decorator(foo)
 {% endhighlight %}
-```
 
 Decorators can be used to register a function to be called at some other time
 by other code.
@@ -356,7 +336,6 @@ For example, the [atexit](https://docs.python.org/3/library/atexit.html) module
 contains a `register` decorator which registers the function to be executed when
 the interpreter shuts down.
 
-```
 {% highlight python %}
 import atexit
 
@@ -364,13 +343,11 @@ import atexit
 def cleanup():
     #...
 {% endhighlight %}
-```
 
 A decorator can be any callable object.
 Since classes are callable (calling them creates an instance), a class which
 defines `__call__` can also be used as a decorator.
 
-```
 {% highlight python %}
 class myDecorator(object):
 
@@ -386,11 +363,9 @@ def aFunction():
     print("inside aFunction()")
 print("Finished decorating aFunction()")
 {% endhighlight %}
-```
 
 Classes themselves can also be decorated.
 
-```
 {% highlight pycon %}
 @decorator
 class Foo:
@@ -401,7 +376,6 @@ class Foo:
     #...
 Foo = decorator(Foo)
 {% endhighlight %}
-```
 
 There is a list of decorator recipes in the
 [Python Decorator Library](https://wiki.python.org/moin/PythonDecoratorLibrary/).
@@ -414,7 +388,6 @@ Static methods can also serve as alternative constructors with more descriptive
 names.
 A static method is created with the `@staticmethod` decorator.
 
-```
 {% highlight python %}
 class LinkedList:
     class Node:
@@ -458,7 +431,6 @@ class LinkedList:
 l1 = LinkedList.fromSeq([1, 2, 3])
 l2 = LinkedList.fromCons([1, [2, [3, []]]])
 {% endhighlight %}
-```
 
 A class method receives a class as its first parameter, instead of an instance.
 These can be more flexible than static methods, especially with inheritance.
@@ -470,7 +442,6 @@ Subclasses must either define class attributes `NETLOC_PATTERN` and
 Users can get a parser for a certain website by passing the URL to
 `ParserFactory.get_parser(url)`.
 
-```
 {% highlight python %}
 from html.parser import HTMLParser
 from urllib.parse import urlparse
@@ -500,7 +471,6 @@ class ParserFactory(HTMLParser):
 parserClass = ParserFactory.get_parser(url)
 parser = parserClass()
 {% endhighlight %}
-```
 
 ## Properties
 
@@ -508,7 +478,6 @@ Properties are attributes which are accessed like fields but behave like methods
 Properties are created with the
 [property](https://docs.python.org/3/library/functions.html#property) decorator.
 
-```
 {% highlight python %}
 class C:
     def __init__(self):
@@ -532,7 +501,6 @@ print(o.x)
 o.x = val
 del o.x
 {% endhighlight %}
-```
 
 ## Descriptors
 
