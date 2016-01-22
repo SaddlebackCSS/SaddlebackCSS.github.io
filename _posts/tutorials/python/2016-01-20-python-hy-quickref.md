@@ -38,7 +38,7 @@ y = m * x + b
 {% endhighlight %}
 </div>
 <div class="col-sm-6 col xs-12">
-{% highlight hy %}
+{% highlight hylang %}
 (setv y (+ (* m x) b))
 {% endhighlight %}
 </div>
@@ -54,7 +54,7 @@ y = m * x + b
 {% endhighlight %}
 </div>
 <div class="col-sm-6 col xs-12">
-{% highlight hy %}
+{% highlight hylang %}
 (.strip "  foo  ")
 (.format "Hi {}, I'm {}" "Bill" "Bob")
 {% endhighlight %}
@@ -72,7 +72,7 @@ if True:
 {% endhighlight %}
 </div>
 <div class="col-sm-6 col xs-12">
-{% highlight hy %}
+{% highlight hylang %}
 (if true
   (do (print "Side effects rock!")
       (print "Yeah, really!")))
@@ -97,7 +97,7 @@ spot.speak()
 {% endhighlight %}
 </div>
 <div class="col-sm-6 col xs-12">
-{% highlight hy %}
+{% highlight hylang %}
 (defclass Cat []
   [age None
    colour "white"]
@@ -121,7 +121,7 @@ variables which only exist in its body:
 {% endhighlight %}
 </div>
 <div class="col-sm-6 col xs-12">
-{% highlight hy %}
+{% highlight hylang %}
 (let [x 5
       y (+ x 1)] (print x y))
 {% endhighlight %}
@@ -143,7 +143,7 @@ else: return "not a number"
 {% endhighlight %}
 </div>
 <div class="col-sm-6 col xs-12">
-{% highlight hy %}
+{% highlight hylang %}
 (if (< n 0.0) "negative"
     (= n 0.0) "zero"
     (> n 0.0) "positive"
@@ -165,7 +165,7 @@ while True: print("Hello World")
 {% endhighlight %}
 </div>
 <div class="col-sm-6 col xs-12">
-{% highlight hy %}
+{% highlight hylang %}
 (while True (print "Hello World"))
 {% endhighlight %}
 </div>
@@ -186,7 +186,7 @@ for key, value in mydict.items():
 {% endhighlight %}
 </div>
 <div class="col-sm-6 col xs-12">
-{% highlight hy %}
+{% highlight hylang %}
 (for [element collection]
     (process element)
     (else (complete collection)))
@@ -213,7 +213,7 @@ finally:
 {% endhighlight %}
 </div>
 <div class="col-sm-6 col xs-12">
-{% highlight hy %}
+{% highlight hylang %}
 (try
     (error-prone-function)
     (except [e ZeroDivisionError] (print "Division by zero"))
@@ -233,7 +233,7 @@ with open("NEWS") as f:
 {% endhighlight %}
 </div>
 <div class="col-sm-6 col xs-12">
-{% highlight hy %}
+{% highlight hylang %}
 (with [f (open "NEWS")]
     (print (.read f)))
 {% endhighlight %}
@@ -253,7 +253,7 @@ with open("NEWS") as f:
 {% endhighlight %}
 </div>
 <div class="col-sm-6 col xs-12">
-{% highlight hy %}
+{% highlight hylang %}
 [1, 2, 3]
 (, 1 2 3)
 {"cat" "meow" "dog" "bark"}
@@ -277,7 +277,7 @@ comprehensions and
 {% endhighlight %}
 </div>
 <div class="col-sm-6 col xs-12">
-{% highlight hy %}
+{% highlight hylang %}
 (list-comp   (* x x) [x (range 10)] (= (% x 2) 0))
 (set-comp    (* x x) [x (range 10)] (= (% x 2) 0))
 (dict-comp x (* x x) [x (range 10)] (= (% x 2) 0))
@@ -297,7 +297,7 @@ mydict[key]
 {% endhighlight %}
 </div>
 <div class="col-sm-6 col xs-12">
-{% highlight hy %}
+{% highlight hylang %}
 (get mylist index)
 (get mydict key)
 {% endhighlight %}
@@ -314,7 +314,7 @@ mydict[key]   = value
 {% endhighlight %}
 </div>
 <div class="col-sm-6 col xs-12">
-{% highlight hy %}
+{% highlight hylang %}
 (assoc mylist index value)
 (assoc mydict key   value)
 {% endhighlight %}
@@ -330,7 +330,7 @@ del dic["foo"]
 {% endhighlight %}
 </div>
 <div class="col-sm-6 col xs-12">
-{% highlight hy %}
+{% highlight hylang %}
 (del (get dic "foo"))
 {% endhighlight %}
 </div>
@@ -348,7 +348,7 @@ mylist[3:-2:2]
 {% endhighlight %}
 </div>
 <div class="col-sm-6 col xs-12">
-{% highlight hy %}
+{% highlight hylang %}
 (cut mylist)
 (cut mylist 3)
 (cut mylist 3 -2)
@@ -371,7 +371,7 @@ from sys import *
 {% endhighlight %}
 </div>
 <div class="col-sm-6 col xs-12">
-{% highlight hy %}
+{% highlight hylang %}
 (import sys os.path)
 (import [os.path [exists isdir isfile]])
 (import [sys :as systest])
@@ -403,7 +403,7 @@ def foo(x):
 {% endhighlight %}
 </div>
 <div class="col-sm-6 col xs-12">
-{% highlight hy %}
+{% highlight hylang %}
 (defn foo [x]
     "docstring"
     x)
@@ -422,7 +422,7 @@ foo(arg0, arg1, arg2, **kwargs)
 {% endhighlight %}
 </div>
 <div class="col-sm-6 col xs-12">
-{% highlight hy %}
+{% highlight hylang %}
 (apply foo args kwargs)
 (apply foo []   kwargs)
 (apply foo [arg0, arg1, arg2] kwargs)
@@ -439,7 +439,7 @@ map(lambda x: x * x, mylist)
 {% endhighlight %}
 </div>
 <div class="col-sm-6 col xs-12">
-{% highlight hy %}
+{% highlight hylang %}
 (map (fn [x] (* x x)) mylist)
 {% endhighlight %}
 </div>
@@ -466,7 +466,7 @@ def some_function(): ...
 {% endhighlight %}
 </div>
 <div class="col-sm-6 col xs-12">
-{% highlight hy %}
+{% highlight hylang %}
 (with-decorator decorator-fun
    (defn some-function [] ...)
 
@@ -491,7 +491,7 @@ def some_function(): ...
 [unquote](http://docs.hylang.org/en/latest/language/api.html#unquote)
 [unquote-splice](http://docs.hylang.org/en/latest/language/api.html#unquote-splice)
 
-{% highlight hy %}
+{% highlight hylang %}
 (defmacro infix [code]
   `(~(get code 1) ~(get code 0) ~(get code 2)))
 
