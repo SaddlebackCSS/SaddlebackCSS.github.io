@@ -13,5 +13,5 @@ tagline: Better software for... ellipses...
   {% endfor %}
 </ul>
 
-![beautiful, beautiful tiger](/images/tiger.jpg)
+![beautiful, beautiful tiger](/images/tiger.gif)
 
