@@ -36,6 +36,7 @@ The file should have the following entries in the YAFM block:
         name: Your Name
         email: you@yoursite.example.com
         github: username
+    date: 2015-12-29 13:59:00 -08:00
     description: ""
     tags: []
     ---
@@ -48,6 +49,7 @@ this file. It must be either `post` or `page`.
     - `name` is the Author's name (required, or don't create the `author` block).
     - `email` is the Author's email address (optional, appears in newsfeeds).
     - `github` is the Author's GitHub user name (optional, creates a link to your profile).
+- `date` is the date, time, and timezone of publication. Jekyll uses this to sort the posts.
 - `description` is the page description which appears on the newsfeed and other pages.
 - `tags` is an array of tags for the post
 
