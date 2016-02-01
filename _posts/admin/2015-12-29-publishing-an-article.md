@@ -5,7 +5,6 @@ author:
     name: Sean Raven
     github: dragon0
 description: ""
-category: lessons
 tags: ["jekyll"]
 ---
 {% include JB/setup %}
