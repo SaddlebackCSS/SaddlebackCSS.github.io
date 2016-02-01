@@ -9,7 +9,7 @@ tags: ["python"]
 ---
 {% include JB/setup %}
 
-[The Python Wiki](https://wiki.python.org/moin/)
+### [The Python Wiki](https://wiki.python.org/moin/)
 
 ### Books
 
@@ -25,6 +25,11 @@ Aimed at non-programmers, it covers tasks such as:
 - Sending e-mails and text messages.
 - Image manipulation.
 - GUI automation (sending keystrokes and mouse events to other programs).
+
+The [Python Practice Book](http://anandology.com/python-practice-book/index.html)
+and
+[Learn Python the Hard Way](http://learnpythonthehardway.org/book/)
+contain many exercises for practicing python.
 
 [Programming Python by Mark Lutz](http://shop.oreilly.com/product/9780596158118.do):
 A *very* comprehensive exploration of Python's standard library.
