@@ -19,8 +19,9 @@ Posts are authored in [Markdown][], see references [here][mastering-markdown].
 The site is compiled using [Jekyll][], with some help from [Jekyll Bootstrap][].
 
 Blog posts are created in the `_posts` directory.
-Subdirectories are used to create categories.
-The filename must be `DATE-TITLE.md` (eg `_posts/admin/2015-12-29-publishing-an-article.md`).
+To create categories, create a folder for the category and place the posts in
+the `_posts` subdirectory of the category directory.
+The filename must be `DATE-TITLE.md` (eg `admin/_posts/2015-12-29-publishing-an-article.md`).
 The file **must** begin with a YAML Front Matter block, even if it is empty.
 YAFM blocks are delimited by lines containing three dashes.
 
