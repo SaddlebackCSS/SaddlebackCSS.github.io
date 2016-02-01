@@ -5,7 +5,8 @@ author:
     name: Sean Raven
     github: dragon0
 description: ""
-tags: []
+category: lessons
+tags: ["python"]
 ---
 {% include JB/setup %}
 
