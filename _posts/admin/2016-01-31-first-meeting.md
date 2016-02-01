@@ -6,7 +6,7 @@ author:
     email: jessemazzella@gmail.com
     github: ozyx
 description: "The poll results are in."
-tags: []
+tags: ["SCSS"]
 ---
 {% include JB/setup %}
 

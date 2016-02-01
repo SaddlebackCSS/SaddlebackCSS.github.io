@@ -6,7 +6,7 @@ author:
     email: jessemazzella@gmail.com
     github: ozyx
 description: "A strawpoll to determine a time to meet."
-tags: []
+tags: ["SCSS"]
 ---
 {% include JB/setup %}
 
