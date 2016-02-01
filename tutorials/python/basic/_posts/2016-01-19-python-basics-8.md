@@ -135,7 +135,7 @@ and [others](http://www.fullstackpython.com/other-web-frameworks.html)).
 
 [Hy](http://hylang.org/) is a Lisp parser for Python.
 It parses Lisp code into Python syntax to be executed by the Python interpreter.
-See also my [hy quickref]({% post_url tutorials/python/2016-01-20-python-hy-quickref %}).
+See also my [hy quickref]({% post_url 2016-01-20-python-hy-quickref %}).
 
 Python is a very powerful language that can be
 [abused wonderfully](http://www.kr41.net/2013/05-19-obscene_python.html).

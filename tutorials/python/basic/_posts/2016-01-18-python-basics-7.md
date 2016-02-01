@@ -260,7 +260,7 @@ For immutable types, if you implement `__eq__` you should also implement
 `__hash__`.
 See [hash](https://docs.python.org/3/reference/datamodel.html#object.__hash__)
 and my section on
-[implementing hashable types]({% post_url tutorials/python/basic/2016-01-09-python-basics-1 %}#implementing-hashable-types).
+[implementing hashable types]({% post_url 2016-01-09-python-basics-1 %}#implementing-hashable-types).
 
 To implement the arithmetic operators, see the section
 [emulating numeric types](https://docs.python.org/3/reference/datamodel.html#emulating-numeric-types).
