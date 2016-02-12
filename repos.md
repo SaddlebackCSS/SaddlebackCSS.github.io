@@ -8,6 +8,6 @@ group: navigation
 
 {%for repo in site.github.public_repositories %}
 - [{{ repo.name }}]({{ repo.html_url }}): {{ repo.description }}
-{% if repo.homepage %}([homepage]({{repo.homepage}})){%endif%}
+{% if repo.homepage != null and repo.homepage != "" %}([homepage]({{repo.homepage}})){%endif%}
 {% endfor %}
 
