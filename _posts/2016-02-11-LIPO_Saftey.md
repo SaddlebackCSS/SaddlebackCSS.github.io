@@ -25,10 +25,10 @@ LIPO batteries are known to *EXPLODE*!
 ![exploding battery](https://i.ytimg.com/vi/-DcpANRFrI4/hqdefault.jpg)
 
 LIPO batteries can be very dangerous. They are the batteries responsible for all the horrible things you have seen about phones catching pillows on fire, drones exploding in airplane overhead bins, etc. Don't be scared though, these things are very rare and it is fairly easy to avoid. The biggest thing is that LIPO batteris *LOVE being at nominal voltage*. This is the easy rule of thumb to remember the main rules:
-   * Never store a battery fully charged or undercharged. Store at nominal voltage
-   * Never Overcharge a battery!
-   * Never Over-DISHCHARGE a battery (just one more minute of flying! I swear!)
-   * Never Use a physically damaged battery (cheap LIPO on ebay! never used, only dropped once!)
++ Never store a battery fully charged or undercharged. Store at nominal voltage
++ Never Overcharge a battery!
++ Never Over-DISHCHARGE a battery (just one more minute of flying! I swear!)
++ Never Use a physically damaged battery (cheap LIPO on ebay! never used, only dropped once!)
 
 ##### Charging
 Good battery chargers will provide everything you need to follow these rules, **don't skimp on the charger**! It will have a storage setting that will charge/discharge the battery to a nice nominal voltage. It will refuse to charge a battery that is damaged or undercharged, which is good. It will have adjustable rates and smart charging. Another thing that makes LIPOs explode is charging the cells in an unbalanced way, and a good charger will prevent this.
