@@ -10,6 +10,8 @@ description: "LIPO battery saftey and Terms"
 tags: [Battery, Safety]
 ---
 {% include JB/setup %}
+**[Cross Posted from AutonomousCar Blog](http://saddlebackcss.github.io/AutonomousCar/blog/LIPO_Saftey/)
+
 ## Lithium Polymer Batteries ##
 Lithium Polymer Batteries are the most common batteries you will see on R.C. vehicles since they provide the best power density, weight, and discharge/charge weight. These are all important attributes for a high performance battery. For people new to LIPO batteries this will be a basic into to what to look for and more importantly *SAFTEY*.
 
@@ -21,10 +23,6 @@ Lithium Polymer Batteries are the most common batteries you will see on R.C. veh
    * **C-Value:** This is somewhat specific to R/C, but is a measurement of how fast a battery can charge and/or discharge. This is very important in R/C since quick acceleration is dependant on getting large amounts of power (watts) from the battery quickly. This is expressed as a number, which you multiply by the batteries capacity to figure out the maximum rate. For example a 5000mAh 3C battery has a maximum discharge rate of 15000 mA, of 15Amps. This rating obviously need to be high enough to supply the power that the vehicle needs. If a quad-copter has 4 motors that draw 50Amps peak then the battery would need to supply at least 200Amps. If the battery is 5000mAh this is 40C! (Luckily batteries like this do exist)
    
 #### SAFTEY!
-LIPO batteries are known to *EXPLODE*!
-
-<img src="https://i.ytimg.com/vi/-DcpANRFrI4/hqdefault.jpg" alt="exploding battery" width="200">
-
 LIPO batteries can be very dangerous. They are the batteries responsible for all the horrible things you have seen about phones catching pillows on fire, drones exploding in airplane overhead bins, etc. Don't be scared though, these things are very rare and it is fairly easy to avoid. The biggest thing is that LIPO batteris *LOVE being at nominal voltage*. This is the easy rule of thumb to remember the main rules:
 
 + Never store a battery fully charged or undercharged. Store at nominal voltage
