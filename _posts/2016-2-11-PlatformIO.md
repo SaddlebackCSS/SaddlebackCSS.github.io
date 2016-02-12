@@ -46,9 +46,6 @@ platformio init --ide clion --board diecimilaatmega328
 
 since I already had the suggested fodler structure it downloaded all the necessary libraries and tools for an AVR/Arduino project, created the Cmakelists.txt, and a platformio.ini and was done. I opened Clion and it recognized the folder as a project and was programming! Auto complete with all the libraries, compiling, and uploading to my board with no other settings. Nice!
 
-<figure>
-	<img src="{{ 'AutonomousCar/assets/img/clion_avr.PNG' | prepend: site.baseurl }}" alt="Clion & AVR working!">
-	<figcaption>Clion Working with my project, proof!</figcaption>
-</figure>
+![Clion & AVR working!](http://saddlebackcss.github.io/AutonomousCar/assets/img/clion_avr.PNG)
 
 I will write more once I use it a little longer, but I am very impressed so far. I also noticed that it inclued a travis.yml file, and that travis has support for continous integration build for embedded platformIO projects. Nice! There is also [integration with other IDEs](http://docs.platformio.org/en/latest/ide.html) so I might play with that to see what else there is for the day I eventually lose my free Clion liscense, or try to find a good open source alternative out of principle.
