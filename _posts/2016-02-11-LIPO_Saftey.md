@@ -31,12 +31,12 @@ LIPO batteries can be very dangerous. They are the batteries responsible for all
 + Never Over-DISHCHARGE a battery (just one more minute of flying! I swear!)
 + Never Use a physically damaged battery (cheap LIPO on ebay! never used, only dropped once!)
 
-##### Charging
+#### Charging
 Good battery chargers will provide everything you need to follow these rules, **don't skimp on the charger**! It will have a storage setting that will charge/discharge the battery to a nice nominal voltage. It will refuse to charge a battery that is damaged or undercharged, which is good. It will have adjustable rates and smart charging. Another thing that makes LIPOs explode is charging the cells in an unbalanced way, and a good charger will prevent this.
 
 *Don't leave a battery unatteneded while charging*. failures happen rarely, but happen fast if they do. Charge away from things that don't do well with being on fire.
 
-##### Storage
+#### Storage
 Store batteries in a fireproof container, either a metal box or a purpose made LIPO bag. Don't buy cheap knock off's, of stuff 100000mAhs of battery into a bag rated for 5000mAh. **If a battery is damaged [follow proper disposal procedures (pdf)](http://konarcflyers.com/Lipo-Disposal.pdf)**
 
 LIPOs hate heat, heat will degrade the lifespan of the battery dramatically. LIPOs are expensive and have pretty short lifespans as it is. if you store them in hot places and treat them rough that lifespan gets shortened a lot. LIPOs don't *hate* the cold, but they do dislike it. Cold temperatures reduce the runtime, to the point of crashing vehicles sometimes, but will not hurt the battery in general.
