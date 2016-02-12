@@ -10,7 +10,8 @@ description: "LIPO battery saftey and Terms"
 tags: [Battery, Safety]
 ---
 {% include JB/setup %}
-**[Cross Posted from AutonomousCar Blog](http://saddlebackcss.github.io/AutonomousCar/blog/LIPO_Saftey/)
+
+**[Cross Posted from AutonomousCar Blog](http://saddlebackcss.github.io/AutonomousCar/blog/LIPO_Saftey/)**
 
 ## Lithium Polymer Batteries ##
 Lithium Polymer Batteries are the most common batteries you will see on R.C. vehicles since they provide the best power density, weight, and discharge/charge weight. These are all important attributes for a high performance battery. For people new to LIPO batteries this will be a basic into to what to look for and more importantly *SAFTEY*.
