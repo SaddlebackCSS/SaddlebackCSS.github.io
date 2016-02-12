@@ -22,7 +22,8 @@ Lithium Polymer Batteries are the most common batteries you will see on R.C. veh
    
 #### SAFTEY!
 LIPO batteries are known to *EXPLODE*!
-<img src="https://i.ytimg.com/vi/-DcpANRFrI4/hqdefault.jpg" alt="exploding battery" width="100">
+
+<img src="https://i.ytimg.com/vi/-DcpANRFrI4/hqdefault.jpg" alt="exploding battery" width="200">
 
 LIPO batteries can be very dangerous. They are the batteries responsible for all the horrible things you have seen about phones catching pillows on fire, drones exploding in airplane overhead bins, etc. Don't be scared though, these things are very rare and it is fairly easy to avoid. The biggest thing is that LIPO batteris *LOVE being at nominal voltage*. This is the easy rule of thumb to remember the main rules:
 
