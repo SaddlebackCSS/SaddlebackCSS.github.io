@@ -37,6 +37,9 @@ Books that every programmer must have.
   The title says it all.
   The actual "things" are listed
   [here](http://programmer.97things.oreilly.com/wiki/index.php/Contributions_Appearing_in_the_Book).
+- [The Art of Readable Code](http://shop.oreilly.com/product/9780596802301.do):
+  Many useful tips for writing code that is easy for people (including yourself)
+  to understand.
 
 
 ## Intro to Programming
