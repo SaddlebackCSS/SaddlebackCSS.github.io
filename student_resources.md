@@ -6,7 +6,7 @@ group: navigation
 ---
 {% include JB/setup %}
 
-This page contains a list of free resources available to students.
+- [The Saddleback CSS Youtube Page](https://www.youtube.com/channel/UCSNQly8VnOtz_x_OnbI0UxA)
 
 ### Free Stuff for Students
 
