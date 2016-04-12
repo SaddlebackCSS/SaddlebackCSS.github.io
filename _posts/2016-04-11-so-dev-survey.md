@@ -4,7 +4,7 @@ title: Thoughts on the 2016 Stack Overflow Developer Survey
 author:
     name: Sean Raven
     github: dragon0
-date: 2016-04-11 18:00:00 -7:00
+date: 2016-04-11 17:45:00 -7:00
 description: "Thoughts on SO Dev Survey"
 tags: [programming]
 ---
@@ -29,10 +29,10 @@ Here are some things I found interesting there.
 - The most trending tech is React, followed by Spark.
 - The most-paid jobs in the US go to Spark and Scala, followed by F#, Cassandra, and Hadoop.
 - The top-paying full-stack technology is Cloud, React, and Redis.
-- The top-paying front-end technology is React, followed by Node.js, followed by Angular, LAMP, and MongoDB.
+- The top-paying front-end (client/browser-side) technology is React, followed by Node.js, followed by Angular, LAMP, and MongoDB.
 - The top-paying mathematics technology is Scala, followed by Spark, followed by Hadoop (followed by C++ and Cloud).
 - The top-paying mobile technology is Objective-C, followed by a toss-up between iOS, Android, Swift, SQL, C++, and C.
-- The top front-end (client/browser-side) techology stack is AngularJS, JavaScript, Node.js.
+- The top front-end techology stack is AngularJS, JavaScript, Node.js.
 - The top data science stack is Python, R, SQL; followed by Java, Python, SQL.
 - The most popular editor/IDE is a tie between Visual Studio and Notepad++.
   - Eclipse is more popular than IntelliJ, Android Studio, and NetBeans.
