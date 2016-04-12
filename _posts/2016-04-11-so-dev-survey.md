@@ -38,4 +38,6 @@ Here are some things I found interesting there.
   - Eclipse is more popular than IntelliJ, Android Studio, and NetBeans.
     - Vim is more popular than Eclipse.
 - Mac beat Windows and (somehow) Linux as most popular Developer OS.
+- Most developers got their current job through referrals by friends.
+- Most developers are self-taught or trained on-the-job.
 - Less than 6% of the responders to this survey are female...
