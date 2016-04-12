@@ -4,7 +4,7 @@ title: Thoughts on the 2016 Stack Overflow Developer Survey
 author:
     name: Sean Raven
     github: dragon0
-date: 2016-04-11 17:30:00 -8:00
+date: 2016-04-11 18:00:00 -7:00
 description: "Thoughts on SO Dev Survey"
 tags: [programming]
 ---
