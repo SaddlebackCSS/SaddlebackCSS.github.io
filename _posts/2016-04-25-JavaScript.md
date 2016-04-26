@@ -1,11 +1,11 @@
 ---
 layout: post
-title: A few sites to learn programming languages
+title: JavaScript Presentation Notes
 author:
     name: Sean Raven
     github: dragon0
-date: 2016-04-12 19:30:00 -7:00
-description: "Some websites for learning new programming languages"
+date: 2016-04-25 17:00:00 -7:00
+description: "JavaScript Presentation Notes"
 tags: [programming]
 ---
 {% include JB/setup %}
