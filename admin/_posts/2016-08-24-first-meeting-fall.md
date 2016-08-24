@@ -5,6 +5,7 @@ author:
     name: Sean Raven
     github: dragon0
 description: "Meeting times for Fall 2016"
+date: 2016-08-21 11:30:00 -08:00
 tags: ["SCSS"]
 ---
 {% include JB/setup %}
