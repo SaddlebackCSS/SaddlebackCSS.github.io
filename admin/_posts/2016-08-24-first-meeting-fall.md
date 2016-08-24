@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Meetings are Tuesday at 6:00"
+title: "Meetings are Tuesdays at 6:00"
 author:
     name: Sean Raven
     github: dragon0
