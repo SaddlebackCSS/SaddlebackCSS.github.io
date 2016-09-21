@@ -12,6 +12,8 @@ tags: ["python"]
 
 This is a simple syntax reference for Python, intended for people with prior programming experience.
 If you know basic control flow, functions, and file i/o in another language, try using this to jump into Python.
+There is a more comprehensive quick reference at [Learn X in Y minutes](https://learnxinyminutes.com/docs/python3/)
+(which also has quick references for many other languages).
 
 [Install Python](https://python.org),
 run Idle (Mac and Linux users may need to open a terminal and run `idle3` or `python3 -m idlelib`),
